@@ -1,0 +1,67 @@
+
+.content{
+  background-color: #ADD8E6 !important;
+  top: 0 !important;
+}
+
+.service-card {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.Why-section{
+  padding: 2%;
+  color:#001F3F ;
+}
+
+p{
+  font-size: large;
+  
+}
+.centered-button {
+  position: absolute;
+  top: 57%;
+  left: 15%;
+  background-color: #001F3F !important;
+  padding: 15px !important;
+  font-size: x-large !important;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Ensure button appears above the video */
+}
+.centered-button:hover{
+  background-color: #FFFFFF !important;
+  color: #001F3F !important;
+  transform: translate(-50%, -55%);
+  transition: 0.5s ease all;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
