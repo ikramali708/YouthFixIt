@@ -68,9 +68,9 @@ function App() {
 
 
 
-  const [isLoading,SetIsLoading]=useState(true);
+  const [isLoading, SetIsLoading] = useState(true);
   useEffect(() => {
-  
+
     setTimeout(() => {
       SetIsLoading(false);
     }, 2000);
@@ -88,126 +88,119 @@ function App() {
 
   return (
 
-<div>
+    <div>
 
 
-    <div className="main">
-      {isLoading?
-      <div style={styles.container}>
-      <h1>Loading...</h1>
-      <div style={styles.spinner}>
-        <BallTriangle
-          color="#00BFFF"
-          height={100}
-          width={100}
-        />
-      </div>
-    </div>
-
-:
-      
-
-
-
-
-
-
-<div>
-
-
-      <Header />
-      {/* <div className="buttonContainer">
-          <button className="customButton bg-dark">Donate Now</button>
-        </div> */}
-      <video ref={videoRef} autoPlay muted loop width="100%" height="100%" controlsList="nodownload" className="backgroundVideo">
-        <source src="Back-video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    <NavLink to="/donate">  <Button variant="primary" className='centered-button'>Donate Now</Button>{' '}
-</NavLink>
-      <div className="content">
-        <section className="mission-section py-5">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-9">
-                <h2>Our Mission</h2>
-                <p>
-                  At YouthFix, our mission is to bridge the gap between the privileged and the underprivileged by facilitating donations from students and individuals with the means to those in need. We aim to create a community where everyone has access to basic necessities and opportunities for a better life.
-                </p>
-              </div>
-              <div className="col-lg-3 handimg">
-                <img src="needy.jpg" alt="" />
-              </div>
+      <div className="main">
+        {isLoading ?
+          <div style={styles.container}>
+            <h1>Loading...</h1>
+            <div style={styles.spinner}>
+              <BallTriangle
+                color="#00BFFF"
+                height={100}
+                width={100}
+              />
             </div>
           </div>
-        </section>
-      </div>
+
+          :
 
 
 
-<div className="contaienr-fluid Why-section mt-3 mb-5">
-  <div className="row roww">
-    <div className="why">
-      <h1>Why Donate to YouthFixIt</h1><hr />
+
+
+
+
+          <div>
+
+
+            <Header />
+            {/* <div className="buttonContainer">
+          <button className="customButton bg-dark">Donate Now</button>
+        </div> */}
+            <video ref={videoRef} autoPlay muted loop width="100%" height="100%" controlsList="nodownload" className="backgroundVideo">
+              <source src="Back-video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <NavLink to="/donate">  <Button variant="primary" className='centered-button'>Donate Now</Button>{' '}
+            </NavLink>
+            <div className="content">
+              <section className="mission-section py-5">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-9">
+                      <h2>Our Mission</h2>
+                      <p>
+                        At YouthFix, our mission is to bridge the gap between the privileged and the underprivileged by facilitating donations from students and individuals with the means to those in need. We aim to create a community where everyone has access to basic necessities and opportunities for a better life.
+                      </p>
+                    </div>
+                    <div className="col-lg-3 handimg">
+                      <img src="needy.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+
+
+            <div className="contaienr-fluid Why-section mt-3 mb-5">
+              <div className="row roww">
+                <div className="why">
+                  <h1>Why Donate to YouthFixIt</h1><hr />
+                </div>
+                <div className="ReasonParagraph">
+                  <p className='Mission-paragrap '>
+                    By donating to YouthFixIt, you're not just offering financial support; you're providing sustenance and hope to those who need it most. Your contributions directly fund our efforts to distribute food and financial aid to those facing hardship, ensuring that no one in our community goes hungry or lacks essential resources. With your help, we can extend a helping hand to the needy, offering them not only nourishment for their bodies but also a glimmer of hope for a better tomorrow. Together, let's make a meaningful impact by uplifting those in need and building a more compassionate and equitable society
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div className="container-fluid Services p-3">
+              <div className="service mt-3">
+                <h1>Our Services</h1>
+              </div>
+
+              <div className="row row-card">
+                <div className="col-lg-2 col-md-6 col-12 card mb-3 ">
+                  <h4 className='text-center mt-2'>Food Assistance </h4><hr />
+                  <p>Our Food Assistance Program is dedicated to providing nourishment and hope to individuals and families facing food insecurity.With the support of our community, our Food Assistance Program strives to alleviate hunger and promote dignity for all, one meal at a time.</p>
+                </div>
+                <div className="col-lg-2 col-md-6 col-12 card mb-3">
+                  <h4 className='text-center mt-2'>Healthcare Initiatives</h4><hr />
+                  <p>Our Healthcare Initiatives aim to improve access to vital medical services and promote well-being for underserved communities.Through collaborative efforts and compassionate care, our Healthcare Initiatives strive to address health disparities and ensure quality healthcare for all.</p>
+                </div>
+                <div className="col-lg-2 col-md-6 col-12 card mb-3">
+                  <h4 className='text-center mt-2'>Resource Distribution</h4><hr />
+                  <p>Our Resource Distribution program ensures essential supplies reach those in need, fostering resilience and dignity in communities.
+                    Through strategic partnerships and efficient logistics, we empower individuals by providing access to vital resources for a better quality of life.</p>
+                </div>
+                <div className="col-lg-2 col-md-6 col-12 card">
+                  <h4 className='text-center mt-2'>Healthcare Initiatives</h4><hr />
+                  <p>Our Healthcare Initiatives prioritize accessibility and equity, striving to provide comprehensive healthcare solutions for all.
+                    Through innovative programs and compassionate care, we aim to bridge gaps in healthcare access, ensuring healthier futures for underserved communities</p>
+                </div>
+              </div>
+            </div>
+
+
+
+            <Footer />
+
+          </div>
+        }</div>
     </div>
-    <div className="ReasonParagraph">
-      <p className='para ps-5'>
-      By donating to YouthFixIt, you're not just offering financial support; you're providing sustenance and hope to those who need it most. Your contributions directly fund our efforts to distribute food and financial aid to those facing hardship, ensuring that no one in our community goes hungry or lacks essential resources. With your help, we can extend a helping hand to the needy, offering them not only nourishment for their bodies but also a glimmer of hope for a better tomorrow. Together, let's make a meaningful impact by uplifting those in need and building a more compassionate and equitable society
-      </p>
-    </div>
-  </div>
-</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <div className="container-fluid Services p-3">
-        <div className="service mt-3">
-          <h1>Our Services</h1>
-        </div>
-
-        <div className="row row-card">
-          <div className="col-lg-2 col-md-6 col-12 card mb-3 ">
-            <h3 className='text-center mt-1'>Food Assistance </h3><hr />
-            <p>Our Food Assistance Program is dedicated to providing nourishment and hope to individuals and families facing food insecurity.With the support of our community, our Food Assistance Program strives to alleviate hunger and promote dignity for all, one meal at a time.</p>
-          </div>
-          <div className="col-lg-2 col-md-6 col-12 card mb-3">
-            <h3 className='text-center mt-1'>Healthcare Initiatives</h3><hr />
-            <p>Our Healthcare Initiatives aim to improve access to vital medical services and promote well-being for underserved communities.Through collaborative efforts and compassionate care, our Healthcare Initiatives strive to address health disparities and ensure quality healthcare for all.</p>
-          </div>
-          <div className="col-lg-2 col-md-6 col-12 card mb-3">
-            <h3 className='text-center mt-1'>Resource Distribution</h3><hr />
-            <p>Our Resource Distribution program ensures essential supplies reach those in need, fostering resilience and dignity in communities.
-              Through strategic partnerships and efficient logistics, we empower individuals by providing access to vital resources for a better quality of life.</p>
-          </div>
-          <div className="col-lg-2 col-md-6 col-12 card">
-            <h3 className='text-center mt-1'>Healthcare Initiatives</h3><hr />
-            <p>Our Healthcare Initiatives prioritize accessibility and equity, striving to provide comprehensive healthcare solutions for all.
-              Through innovative programs and compassionate care, we aim to bridge gaps in healthcare access, ensuring healthier futures for underserved communities</p>
-          </div>
-        </div>
-      </div>
-
-
-
-      <Footer />
-
-    </div>
-      }</div>
-</div>
-    
   );
 }
 

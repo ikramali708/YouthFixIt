@@ -17,13 +17,13 @@ function Donate() {
     return (
         <div className="main">
             <Header />
-            <div className="container-fluid m-3 ms-5">
+            <div className="container-fluid Donation-main-container ">
                 <div className="row">
                     <div className="col-lg-8 col-12 mt-4">
                         <h1 style={{color:'#001F3F'}}>
                             Donate Now
                         </h1>
-                        <p className="pt-3">
+                        <p className="pt-3 donation-paragraph">
                             Your donation has the power to transform lives. By contributing to our cause, you're not just giving money – you're giving hope, opportunity, and a chance for a brighter future. Every dollar you donate goes directly towards supporting our programs and initiatives, whether it's providing essential resources to those in need, funding groundbreaking research, or empowering individuals to achieve their dreams. Together, we can make a real difference in the world and create positive change that lasts for generations to come. Join us in our mission and donate now to be a part of something truly meaningful.
                         </p>
                     </div>

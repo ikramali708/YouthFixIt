@@ -27,13 +27,28 @@ p{
   transform: translate(-50%, -50%);
   z-index: 1; /* Ensure button appears above the video */
 }
+
+@media (max-width: 768px) {
+  .centered-button {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    background-color: #001F3F !important;
+    padding: 5px !important;
+    font-size: small !important;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure button appears above the video */
+  }}
+
 .centered-button:hover{
   background-color: #FFFFFF !important;
   color: #001F3F !important;
   transform: translate(-50%, -55%);
   transition: 0.5s ease all;
 }
-
+.Mission-paragrap{
+  padding: 20px !important;
+}
 
 
 

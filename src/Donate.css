@@ -33,3 +33,10 @@ Button:hover{
     transition: 0.5s ease all;
     box-shadow: rgb(236, 68, 39);
 }
+.donation-paragraph{
+    color: #001F3F !important;
+}
+.Donation-main-container{
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+}

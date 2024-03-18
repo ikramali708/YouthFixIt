@@ -3,7 +3,9 @@
     width: 200px;
 } */
 .img-about{
-    margin-left: 100px;
+    margin-left: 10% !important;
+    width: 300px;
+    height: auto;
     
 }
 .card{
@@ -38,3 +40,35 @@
   h3:hover{
     color: white !important;
   }
+  hr{
+    width: 80% !important;
+    
+  }
+  .line{
+    display: flex !important;
+
+    align-items: center;
+    justify-content: center !important;
+  }
+  .Aboutus-images-container{
+      /* display: flex; */
+      align-items: center;
+      text-align: center;
+  }
+ .AboutUS_Donation-img{
+  margin-bottom: 20px !important;
+  box-shadow: rgb(red, green, blue);
+ }
+ .AboutUS_Donation-img:hover{
+  transform: translateY(-5%);
+  transform: scale(1.09);
+  transition: 0.5s ease all;
+ }
+ @media(max-width:768px) {
+  .AboutUS_Donation-img{
+    margin-bottom: 40px !important;
+   }
+ }
+ .paragraph{
+  margin-bottom: 40px !important;
+ }
