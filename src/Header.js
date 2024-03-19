@@ -52,7 +52,7 @@ function Navbar() {
             <li className="nav-item">
               <NavLink to="/contact" className='nav-link'>Contact us</NavLink>
             </li>
-           
+
           </ul>
           <button className="sidebar-toggle-button" onClick={toggleSidebar}>
             <i className="fas fa-bars"></i>
@@ -75,7 +75,7 @@ function Navbar() {
               <Link to="/donate" className='Small-nav-link'>Donate</Link>
             </li>
             <li>
-              <Link to="/contact"  className='Small-nav-link'>Contact us</Link>
+              <Link to="/contact" className='Small-nav-link'>Contact us</Link>
             </li>
             <li>
               <Link to="/about" className='Small-nav-link'>About us</Link>
